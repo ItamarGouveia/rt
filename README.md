@@ -1,12 +1,6 @@
-Que ótimo que deu certo! Agora, vamos criar um `README.md` bem estruturado para o seu projeto no GitHub. Um bom `README` deve ser claro, informativo e fácil de seguir. Vou criar um exemplo de `README.md` que você pode usar, e depois você pode personalizá-lo conforme necessário.
+# Projeto RT (Remove to Trash)
 
-Aqui está um modelo de `README.md` para o seu projeto:
-
----
-
-# Projeto RT (Nome do Projeto)
-
-Descrição breve do projeto e o que ele faz.
+É uma alternativa para o rm deo linux que joga os arquivos para a lixeira 
 
 ## Índice
 
@@ -19,7 +13,7 @@ Descrição breve do projeto e o que ele faz.
 
 ## Sobre
 
-O **RT** é um projeto desenvolvido para [descreva o objetivo e o propósito do seu projeto]. Ele foi criado com a finalidade de [explicar a motivação do projeto].
+O **RT** é um projeto desenvolvido para excluir arquivos por linha de comando para a lixeira ao invés de excluir direto. Ele foi criado com a finalidade de evitar que por descuido a gente acabe excluindo definitivamente um arquivo que não deveria.
 
 ## Requisitos
 
@@ -27,7 +21,7 @@ Antes de rodar o projeto, é necessário ter os seguintes softwares instalados:
 
 - **C++**: O código fonte é compilado com `g++`.
 - **Make**: Para executar as etapas de compilação e instalação.
-- [Outros requisitos específicos, se houver]
+
 
 ## Instalação
 
