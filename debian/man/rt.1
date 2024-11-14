@@ -1,0 +1,19 @@
+.TH RT 1 "Novembro 2024" "1.0.0" "RT Manual"
+.SH NOME
+rt \- Move arquivos ou diretórios para a lixeira no Linux
+.SH SINOPSE
+.B rt
+[OPÇÕES] ARQUIVO_OU_DIRETORIO
+.SH DESCRIÇÃO
+Este programa move arquivos ou diretórios para a lixeira no Linux. Quando movido para a lixeira,
+o arquivo ou diretório é armazenado em ~/.local/share/Trash/files/ e as informações sobre a
+exclusão são salvas em ~/.local/share/Trash/info/.
+.SH OPÇÕES
+.TP
+.B -h
+Exibe esta página de manual.
+.SH EXEMPLO
+Para mover um arquivo chamado "documento.txt" para a lixeira:
+.B rt documento.txt
+.SH AUTOR
+Itamar Gouveia <contato.itamargouveia@gmail.com>

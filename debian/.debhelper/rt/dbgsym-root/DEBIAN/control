@@ -1,0 +1,13 @@
+Package: rt-dbgsym
+Package-Type: ddeb
+Source: mover-para-lixeira
+Version: 1.0.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Seu Nome <seu_email@dominio.com>
+Installed-Size: 53
+Depends: rt (= 1.0.0-1)
+Section: debug
+Priority: optional
+Description: debug symbols for rt
+Build-Ids: 8d20b0d4c2d76e5b8bed6feafa5ff1e63e56e0de

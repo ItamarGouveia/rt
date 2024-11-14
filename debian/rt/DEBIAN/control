@@ -1,0 +1,12 @@
+Package: rt
+Source: mover-para-lixeira
+Version: 1.0.0-1
+Architecture: amd64
+Maintainer: Seu Nome <seu_email@dominio.com>
+Installed-Size: 48
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 9)
+Section: utils
+Priority: optional
+Homepage: https://github.com/ItamarGouveia/rt
+Description: Programa para mover arquivos ou diretórios para a lixeira no Linux
+ Um programa simples para mover arquivos ou diretórios para a lixeira.

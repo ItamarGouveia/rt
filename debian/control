@@ -1,0 +1,14 @@
+Source: mover-para-lixeira
+Section: utils
+Priority: optional
+Maintainer: Seu Nome <seu_email@dominio.com>
+Build-Depends: debhelper (>= 12), g++ (>= 7)
+Standards-Version: 4.5.0
+Homepage: https://github.com/ItamarGouveia/rt
+Vcs-Git: https://github.com/ItamarGouveia/rt.git
+
+Package: rt
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Programa para mover arquivos ou diretórios para a lixeira no Linux
+ Um programa simples para mover arquivos ou diretórios para a lixeira.

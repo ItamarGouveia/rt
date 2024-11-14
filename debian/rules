@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+# Definir a compatibilidade do debhelper para a versão correta
+export DH_COMPAT=10
+
+# Use a regra padrão do dh (Debian Helper)
+%:
+	dh $@
+
+# Sobrescreve a regra dh_auto_install para incluir a man page
+override_dh_auto_install:
+	# Instalar o binário no diretório correto
+	make install DESTDIR=$(CURDIR)/debian/rt
+
+	# Instalar a man page no diretório correto
+	install -m 644 debian/man/rt.1 \
+		$(CURDIR)/debian/rt/usr/share/man/man1/
+# Sobrescreve a regra de limpeza do dh_auto_clean (caso necessário)
+override_dh_auto_clean:
+	make clean
+
