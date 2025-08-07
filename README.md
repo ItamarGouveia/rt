@@ -30,8 +30,8 @@ Antes de rodar o projeto, é necessário ter os seguintes softwares instalados:
 Primeiro, clone o repositório para o seu ambiente local:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+git clone https://github.com/ItamarGouveia/rt.git
+cd rt
 ```
 
 ### Compilando o Projeto
