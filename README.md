@@ -13,7 +13,7 @@
 
 ## Sobre
 
-O **RT** é um projeto desenvolvido para excluir arquivos por linha de comando para a lixeira ao invés de excluir direto. Ele foi criado com a finalidade de evitar que por descuido a gente acabe excluindo definitivamente um arquivo que não deveria.
+O RT (Remove to Trash) é uma ferramenta de linha de comando escrita em C++ que move arquivos para a lixeira do sistema, funcionando como uma alternativa segura ao comando rm.
 
 ## Requisitos
 
