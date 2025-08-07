@@ -1,6 +1,8 @@
-# Projeto RT (Remove to Trash)
+# RT (Remove to Trash)
 
-É uma alternativa para o rm deo linux que joga os arquivos para a lixeira 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+Uma alternativa segura ao comando `rm` do Linux: em vez de excluir arquivos permanentemente, o **RT** os move para a lixeira. Criado para prevenir exclusões acidentais via terminal.
 
 ## Índice
 
@@ -13,109 +15,64 @@
 
 ## Sobre
 
-O RT (Remove to Trash) é uma ferramenta de linha de comando escrita em C++ que move arquivos para a lixeira do sistema, funcionando como uma alternativa segura ao comando rm.
+O **RT (Remove to Trash)** é uma ferramenta de linha de comando desenvolvida em C++ que move arquivos para a lixeira do sistema, funcionando como um substituto mais seguro para o `rm`. Ideal para usuários que utilizam terminal com frequência e querem evitar perdas acidentais de dados.
 
 ## Requisitos
 
-Antes de rodar o projeto, é necessário ter os seguintes softwares instalados:
-
-- **C++**: O código fonte é compilado com `g++`.
-- **Make**: Para executar as etapas de compilação e instalação.
-
+- **C++ (g++)**
+- **Make**
 
 ## Instalação
-
-### Clonando o Repositório
-
-Primeiro, clone o repositório para o seu ambiente local:
 
 ```bash
 git clone https://github.com/ItamarGouveia/rt.git
 cd rt
-```
-
-### Compilando o Projeto
-
-O projeto usa o `Makefile` para compilar e instalar. Para compilar o projeto, execute:
-
-```bash
 make
 ```
 
-Isso irá compilar o código-fonte e gerar o binário `rt`.
-
-### Instalando o Binário
-
-Para instalar o binário no seu sistema, execute o seguinte comando:
+### Instalar o binário
 
 ```bash
 make install DESTDIR=/caminho/do/destino
 ```
 
-Substitua `/caminho/do/destino` pelo diretório onde você deseja que o binário seja instalado. Por exemplo:
+Por exemplo:
 
 ```bash
-make install DESTDIR=/home/usuario/projeto/instalacao
+make install DESTDIR=/home/usuario/bin
 ```
 
-Isso irá copiar o binário para o diretório correto dentro de `DESTDIR`.
-
-### Limpando os Arquivos de Compilação
-
-Para remover os arquivos de compilação gerados, use:
+### Limpeza
 
 ```bash
-make clean
-```
-
-Se você deseja fazer uma limpeza completa, incluindo o arquivo tarball, execute:
-
-```bash
-make distclean
+make clean         # Remove arquivos temporários
+make distclean     # Limpa completamente, incluindo tarballs
 ```
 
 ## Uso
 
-Após instalar o binário, você pode executá-lo com o seguinte comando:
-
 ```bash
-./rt
+./rt nome_do_arquivo
 ```
 
-Se você precisar de mais detalhes sobre como usar o projeto, adicione exemplos aqui.
+**Exemplo:**
+```bash
+./rt documento.txt
+```
 
-### Exemplo de uso
-
-1. Execute o comando para compilar e rodar:
-   ```bash
-   ./rt
-   ```
-
-2. [Descrição do que acontece quando o programa é executado].
+➡️ Isso move `documento.txt` para a lixeira, sem excluir permanentemente o arquivo.
 
 ## Contribuição
 
-Contribuições são bem-vindas! Para contribuir:
+Contribuições são bem-vindas!
 
-1. Faça um fork do projeto.
-2. Crie uma branch (`git checkout -b minha-feature`).
-3. Faça suas mudanças.
-4. Envie suas alterações com um pull request.
+1. Faça um fork do projeto
+2. Crie uma branch (`git checkout -b minha-feature`)
+3. Faça suas alterações
+4. Envie um pull request
 
-Por favor, veja o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes sobre o processo de contribuição.
+Veja o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes.
 
 ## Licença
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
----
-
-### Dicas de Personalização:
-
-- **Sobre o Projeto**: Substitua a descrição genérica do projeto por algo específico, explicando o que ele faz, o que o torna interessante e como ele pode ser útil.
-- **Requisitos**: Se o projeto requer outras ferramentas ou bibliotecas, adicione essas informações.
-- **Instalação**: Caso o processo de instalação precise de configurações específicas ou ferramentas adicionais, inclua detalhes sobre isso.
-- **Uso**: Se o projeto tiver opções de configuração, parâmetros de linha de comando, ou exemplos de entrada e saída, adicione-os na seção de uso.
-- **Contribuição**: Caso você tenha um processo específico para contribuições ou queira guiar as pessoas a seguir boas práticas de codificação, adicione essas informações.
-
-Esse formato de `README.md` ajuda qualquer pessoa que veja o seu repositório a entender rapidamente como usar, instalar e contribuir com o projeto.
+Distribuído sob a [Licença MIT](LICENSE).
